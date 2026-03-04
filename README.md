@@ -235,7 +235,7 @@ Python code to download the generated image:
     import requests
 
     def download_image(prompt):
-        url = f"https://pollinations.ai/p/{prompt}"
+        url = f"https://gen.pollinations.ai/image/{prompt}"
         response = requests.get(url)
         with open('generated_image.jpg', 'wb') as file:
             file.write(response.content)
@@ -355,7 +355,7 @@ Our codebase is organized into several key folders, each serving a specific purp
 
 - [`packages/sdk/`](./packages/sdk/): SDK NPM library with pollinations ready functions for Pollinations.ai.
 
-- [`packages/ompc/`](./packages/ompc/): Oh My Polli Code is a ready Open code Router mechanism built on top of the open code framework but wiith the pollinations models.
+- [`packages/ompc/`](./packages/ompc/): Oh My Polli Code is a ready Open code Router mechanism built on top of the open code framework but with the pollinations models.
 
 - [`packages/mcp/`](./packages/mcp/): Model Context Protocol (MCP) server for AI assistants like Claude to generate images directly.
 
